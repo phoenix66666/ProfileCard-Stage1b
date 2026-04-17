@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile Card</title>
+
+</head>
+
+<body>
+
+    <article class="profile-card" data-testid="test-profile-card">
+
+        <div class="avatar-container">
+            <img src="avatar.jpg" alt="Profile picture of Jing" class="avatar" data-testid="test-user-avatar" />
+        </div>
+
+        <div class="profile-card-content">
+            <header class="profile-header">
+                <h2 data-testid="test-user-name" aria-label="Profile of Jing">Jing</h2>
+            </header>
+
+            <p class="bio" data-testid="test-user-bio">
+                A passionate web developer with a love for creating beautiful and functional websites. I enjoy learning
+                new technologies and contributing to open-source projects. I'm also a big fan of skiing and cats.
+
+            </p>
+
+            <nav>
+                <ul class="social-links" data-testid="test-user-social-links">
+                    <li><a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-twitter">Twitter</a></li>
+                    <li><a href="https://linkedin.com/in/example" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-linkedin">LinkedIn</a></li>
+                    <li><a href="https://github.com/example" target="_blank" rel="noopener noreferrer"
+                            data-testid="test-user-social-github">GitHub</a></li>
+                </ul>
+            </nav>
+
+            <section class="hobbies">
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Coding</li>
+                    <li>Reading</li>
+                    <li>Skiing</li>
+                </ul>
+            </section>
+
+            <section class="dislikes">
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>phone storage full</li>
+                    <li>traffic</li>
+                    <li>slow internet</li>
+                </ul>
+            </section>
+         <p class="time" data-testid="test-user-time">
+                Current Time: <span id="current-time" aria-live="polite"></span> ms
+            </p>
+        </div>
+
+    </article>
+
+<script src="script.js"></script>
+</body>
+
+</html>
